@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>מערכת 1 - ניתוח ניהולי</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background: linear-gradient(135deg, #f7fafc, #e2e8f0);
+      min-height: 100vh;
+      font-family: 'Inter', sans-serif;
+      color: #2d3748;
+    }
+    header {
+      background: #ffffff;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    .nav-link {
+      transition: color 0.2s ease;
+    }
+    .nav-link:hover {
+      color: #4b6cb7;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 1rem;
+    }
+    .card {
+      background: white;
+      border-radius: 0.5rem;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    }
+  </style>
+</head>
+<body>
+  <header class="py-4 sticky top-0 z-50">
+    <nav class="container flex justify-between items-center">
+      <h1 class="text-2xl font-bold text-gray-800">מערכת ניתוח ניהולי</h1>
+      <div class="space-x-6">
+        <a href="index.html" class="nav-link text-gray-600 text-lg font-medium">חזרה לדף הראשי</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container py-12">
+    <section class="card p-8 mb-12">
+      <h2 class="text-3xl font-bold text-gray-800 mb-4">הניתוח הניהולי בחברה</h2>
+      <p class="text-lg text-gray-600 max-w-3xl">
+        במסגרת הניתוח הניהולי בחנו את הרווחיות של מגה ספורט לפי מותגים וקטגוריות. בתרשים הראשון יצרנו מדד בשם "רווח לשקלים" שמחשב את ההפרש בין המחיר לאחר ההנחה לבין עלות המוצר, והצגנו את סך הרווחים לפי מותגים בגרף עמודות – כאשר ציר X מייצג את שמות המותגים וציר Y את סכום הרווחים. העמודות נצבעו בהתאם לגובה הרווח והוצגו עליהן ערכים מספריים, כך שניתן להבין במהירות אילו מותגים רווחיים יותר. בתרשים השני ניתחנו את הרווח לפי קטגוריות נעליים ריצה, ילדים, אופנה ועוד גם כאן באמצעות גרף עמודות עם ערכים מדויקים מעל כל עמודה וצבעוניות לפי רווח. שני התרשימים יחד מאפשרים למנהלי מגה ספורט לזהות הזדמנויות לרווח ולכוון את מאמצי השיווק והמכירה בהתאם.
+      </p>
+    </section>
+
+    <section class="card p-8">
+      <h3 class="text-2xl font-bold text-gray-800 mb-4">לוח הניתוח הניהולי</h3>
+      <div class="tableauPlaceholder" id="vizContainer" style="position: relative">
+        <noscript>
+          <a href="#"><img alt="Dashboard" src="https://public.tableau.com/static/images/Pr/Project-_17518829425370/sheet2/1.png" style="border: none" /></a>
+        </noscript>
+        <object class="tableauViz" style="display:none;">
+          <param name="host_url" value="https%3A%2F%2Fpublic.tableau.com%2F" />
+          <param name="embed_code_version" value="3" />
+          <param name="site_root" value="" />
+          <param name="name" value="Project-_17518829425370/sheet2" />
+          <param name="tabs" value="no" />
+          <param name="toolbar" value="yes" />
+          <param name="static_image" value="https://public.tableau.com/static/images/Pr/Project-_17518829425370/sheet2/1.png" />
+          <param name="animate_transition" value="yes" />
+          <param name="display_static_image" value="yes" />
+          <param name="display_spinner" value="yes" />
+          <param name="display_overlay" value="yes" />
+          <param name="display_count" value="yes" />
+          <param name="language" value="en-US" />
+        </object>
+      </div>
+      <script type="text/javascript">
+        const container = document.getElementById('vizContainer');
+        const vizObject = container.getElementsByTagName('object')[0];
+        vizObject.style.width = '100%';
+        vizObject.style.height = (container.offsetWidth < 500 ? '727px' : '827px');
+        const scriptElement = document.createElement('script');
+        scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+        vizObject.parentNode.insertBefore(scriptElement, vizObject);
+      </script>
+    </section>
+  </main>
+
+  <footer class="py-6 bg-white shadow-inner text-center">
+    <p class="text-gray-600">© 2025 מערכת ניתוח ניהולי. כל הזכויות שמורות.</p>
+  </footer>
+</body>
+</html>
